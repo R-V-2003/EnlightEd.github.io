@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+	padding: 0px;
+	margin: 0px;
+}
+.header{
+	width: 100%;
+	float: left;
+	margin-top: -100px;
+	padding-top: 0px;
+	height: 900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('image1.jpg');
+}
+.REGNA{
+    width:10%;
+    float: left;
+    font-size: 30px;
+    margin-left: 20px;
+    color: white;
+}
+.menu{
+	width: 80%;
+	float: left;
+	margin-left: 60px;
+}
+.menu ul{
+	text-align: right;
+	list-style: none;
+	padding: 15px;
+}
+.menu ul li{
+	display: inline-block;
+	padding: 15px;
+	font-size: 10px;
+	position: relative;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.menu ul li ul{
+	display: none;
+}
+.menu ul li:hover ul{
+	position: absolute;
+	width: 200px;
+	display: block;
+	top: 100%;
+	right: 0%;
+	background-color:transparent;
+}
+.menu ul li ul li ul{
+	display: none !important;
+}
+.menu ul li ul li:hover ul{
+	display: block !important;
+	top: 0%;
+	right:  100%;
+}
+.back{
+	width: 100%;
+	float: left;
+}
+.text{
+	text-align: center;
+	margin-top:350px;
+	font-size: 30px;
+	color: white;
+}
+.text button{
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	border-radius: 30px;
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.text button:hover{
+	background-color: #2dc997;;
+	border: 2px solid white;
+
+}
+.image{
+	width: 100%;
+	float: left;
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+.part1{
+	width: 50%;
+	float: left;
+}
+.part1 h2{
+	font-size: 40px;
+	margin-left: 20px;
+}
+.part1 p{
+	font-size: 18px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.part2{
+	width: 50%;
+	float: left;
+}
+.part2 img{
+	width: 100%;
+	height: 500px;
+}
+.fa-business-time{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+    color: #2dc997;
+}
+.main{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+.main1{
+	width: 20%;
+	float: left;
+}
+.main2{
+	width: 80%;
+	float: left;
+	margin-top: 12px;
+}
+.fa-file-lines{
+	border: 1px solid #2dc997;
+	color: #2dc997;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.main10{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+.main11{
+	width: 20%;
+	float: left;
+}
+.main12{
+	width: 80%;
+	float: left;
+	margin-top: 12px;
+}
+.fa-magnifying-glass{
+    border: 1px solid #2dc997;
+    color: #2dc997;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.main21{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+.main22{
+	width: 20%;
+	float: left;
+}
+.main23{
+	width: 80%;
+	float: left;
+	margin-top: 12px;
+}
+.newpage{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.newpage h1 {
+	margin-top: 100px;
+	font-size: 50px;
+}
+.newpage p{
+    font-size: 20px;
+}
+.const{
+	display: flex;
+}
+.fact1{
+	width: 25%;
+	padding: 50px;
+	font-size: 40px;
+	color: #2dc997;
+}	
+.fact1 p{
+	font-size: 20px;
+	padding: 8px;
+}
+.fact2{
+    width: 25%;
+	padding: 50px;
+	font-size: 40px;
+	color: #2dc997;
+}
+.fact2 p{
+	font-size: 20px;
+	padding: 8px;
+}	
+.fact3{
+	width:25%; 
+	padding: 50px;
+	font-size: 40px;	
+	color: #2dc997;
+}
+.fact3 p{
+	font-size: 16px;
+	padding: 8px;
+}
+.fact4{
+	width: 25%;
+	padding: 50px;
+	font-size: 40px;
+	color: #2dc997;
+}
+.fact4 p{
+	font-size: 18px;
+	padding: 8px;
+}
+.newpage1{
+	width: 100%;
+ 	text-align: center;
+ 	margin-bottom: 70px;
+ }
+.newpage1 h1{
+ 	font-size: 40px;
+ 	font-weight: 20px;
+ }	
+.newpage1 p{
+ 	font-size: 20px;
+ }
+.newpage2{
+ 	 width: 100%;
+ 	 height: auto;
+ 	 justify-content: space-around;
+ 	 display: flex;
+ 	 margin-bottom: 30px;
+}
+.box1{
+ 	width: 33.3%;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-briefcase{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+} 
+.fa-briefcase:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box1 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box1 p{
+	text-align: center;
+}
+.box2{
+    width: 33.3%;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-clipboard-list{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+}
+.fa-clipboard-list:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box2 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box2 p{
+	text-align: center;
+}
+.box3{
+    width: 33.3%;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-chart-simple{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+}
+.fa-chart-simple:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box3 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box3 p{
+	text-align: center;
+}
+.newpage3{
+	width: 100%;
+ 	height: auto;
+ 	justify-content: space-around;
+ 	display: flex;
+ 	margin-bottom: 25px;
+}
+.box4{
+    width: 33.3%;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-glasses{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+}
+.fa-glasses:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box4 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box4 p{
+	text-align: center;
+}
+.box5{
+    width: 33.3%;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-sun{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+}
+.fa-sun:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box5 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box5 p{
+	text-align: center;
+}
+.box6{
+    width: 33.3%;
+    height: 200px;
+    display: inline-block;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #e6e6e6;
+    background-color: #fafafa;
+}
+.fa-calendar-week{
+	border: 1px solid #2dc997;
+    border-radius: 50%;
+    font-size: 20px;  
+    padding: 20px;
+    bottom: 20px;
+    background-color: #2dc997;
+}
+.fa-calendar-week:hover{
+	border: 1px solid #2dc997;
+	background-color: white;
+}
+.box6 h3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.box6 p{
+	text-align: center;
+}
+.newpage4{
+	width: 100%;
+	float: left;
+}
+.back1{
+	width: 100;
+	float: left;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    background-image: url('img9.jpg');
+}
+.text1{
+	width: 70%;
+	margin-top:90px;
+	margin-left: 40px;
+	color: white;
+}
+.text1 h3{
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: black;
+}
+.text1 p{
+	font-size: 22px;
+	color: black;
+}
+.text2 button{
+	width: 17%;
+	float: right;
+	background-color: transparent;
+	border: 2px solid black;
+	color: black;
+	border-radius: 50px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 80;
+	position: relative;
+	right: 55px;
+	bottom: 75px;
+}
+.text2 button:hover{
+	background-color: #2dc997;
+}
+.newpage5{
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding-top: 70px;
+	margin-bottom: 35px;
+}
+.text3 h3{
+	font-size: 32px;
+	font-weight: bold;
+}
+.text3 p{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.text4 button{
+	 cursor: pointer;
+    display: inline-block;
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+    margin: 10px;
+    transition: all 
+   
+}
+.btn2{
+	color: white;
+	background-color: #2dc997;
+}
+.btn3:hover{
+	background-color: #2dc997;
+	text-align: 2s;
+}
+.btn4:hover{
+	background-color: #2dc997;
+	text-align: 2s;
+}
+.btn5:hover{
+	background-color: #2dc997;
+	text-align: 2s;
+}
+.imgapp{
+  	width: 100%;
+ 	float: left;
+  	display: flex;
+  	justify-content: center;
+}
+.app1 img{
+    width: 296PX;
+	height: 222PX;
+	padding: 12PX;
+}
+.app2 img{
+ 	width: 296PX;
+ 	height: 222PX;
+ 	padding: 12PX;
+}
+.app3 img{
+ 	width: 296PX;
+ 	height: 222PX;
+	padding: 12PX;
+}
+.imgcard{
+	width: 100%;
+	float:left;
+	display: flex;
+	justify-content: center;
+}
+.card1 img{
+	width: 296px;
+	height: 222px;
+	padding: 12px;
+}
+.card2 img{
+ 	width: 296PX;
+ 	height: 222PX;
+ 	padding: 12PX;
+}
+.card3 img{
+ 	width: 296PX;
+ 	height: 222PX;
+	padding: 12PX;
+}
+.imgweb{
+	width: 100%;
+	float:left;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 45px;
+}
+.web1 img{
+	width: 296px;
+	height: 222px;
+	padding: 12px;
+}
+.web2 img{
+ 	width: 296PX;
+ 	height: 222PX;
+ 	padding: 12PX;
+}
+.web3 img{
+ 	width: 296PX;
+ 	height: 222PX;
+	padding: 12PX;
+}
+.newpage7{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-bottom: 55px;
+}
+.text4 h3{
+	font-size: 40px;
+}
+.text4 p{
+	font-size: 20px;
+	margin-bottom: 55px;
+}
+.team{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	padding-bottom: 50PX;
+}
+.team1 img{
+	width: 70%;
+	padding-bottom: 50px;
+}
+.team1 p{
+	font-style: italic;
+}
+.team2 img{
+	width:70%;
+	padding-bottom: 50px;
+}
+.team2 p{
+	font-style: italic;
+}
+.team3 img{
+	width:70%;
+	padding-bottom: 50px;
+}
+.team3 p{
+	font-style: italic;
+}
+.team4 img{
+	width: 70%;
+	padding-bottom: 50px;
+}
+.team4 p{
+	font-style: italic;
+}
+.social{
+	width: 100%;
+	color: gray;
+	justify-content: center;
+	padding-top: 20px;
+	font-size: 22px;
+}
+.newpage8{
+	width: 100%;
+	float: left;
+	text-align: center;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+.text0 h1{
+	padding-top: 90px;
+	margin-bottom: 10px;
+ 	font-weight: bold;
+ 	font-size: 40px;
+}
+.text0 p{
+	color: lightslategrey;
+	margin-bottom: 75px;
+	font-size: 20px;	
+}
+.iframe{
+	margin-bottom: 30px;
+}
+.address{
+width: 100%;
+float: left;
+}
+.info{
+  width: 40%;
+  float: left;
+  text-align: right;
+}
+.datail{
+	margin: 15px;
+	font-size: 14px;
+}
+.datail p{
+	font-size: 14px;
+	margin-bottom: 17px;
+}
+.iconx{
+	width: 20%;
+	float: left;
+}
+.fa-location-dot{
+    padding: 16px;
+    margin-left: 340px;
+    font-size: 32px;
+    color: #2dc997;
+}
+.icony{
+	width: 20%;
+	float: left;
+}
+.datail1{
+	margin: 33px;
+}
+.datail1 p{
+	font-size: 14px;
+	margin-bottom: 17px;
+}
+.fa-envelope{
+	padding: 4px;
+    margin-left: 350px;
+    font-size: 32px;
+    color: #2dc997;
+ }
+.iconz{
+	width: 20%;
+	float: left;
+}
+.datail2{
+	margin: 40px;
+}
+.datail2 p{
+	font-size: 14px;
+	margin-bottom: 17px;
+}
+.fa-mobile{
+	padding: 4px;
+    margin-left: 350px;
+    font-size: 32px;
+    color: #2dc997;
+}
+.form{
+   width: 60%;
+    float: left;
+}
+input[type="text"]{
+    width: 60%;
+    height: 30px;
+    margin-top: 25px;
+    margin-right: 200px;
+}
+textarea{
+    margin-top: 25px;
+    margin-right: 230px;
+}
+.icon15{
+	font-size: 30px;
+	width: 50%;
+	float: left;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+.text5 button{
+	color: black;
+	border: 1px solid #2dc997;
+	background-color: #2dc997;
+	text-align: center;
+	padding: 10px ;
+	margin-top: 10px;
+	margin-left: 300px;
+	font-size: 20px;
+	color: white;
+}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>prg</title>
+
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<h1>Regna</h1>
+		</div>	
+			<div class="menu">
+				<ul>
+					<li><a href="#"><b>Home</b></a></li>
+					<li><a href="#"><b>About</b></a></li>
+					<li><a href="#"><b>Services</b></a></li>
+					<li><a href="#"><b>Portfolio</b></a></li>
+					<li><a href="#"><b>Team</b></a></li>
+					<li><a href="#"><b>Drop Down</b></a>
+						<ul>
+							<li><a href="#"><b>Drop Down1</b></a></li>
+							<li><a href="#"></b>Deep Drop Down</b></a>
+								<ul>
+									<li><a href="#"><b>Deep Drop Down1</b></a></li>
+									<li><a href="#"><b>Deep Drop Down2</b></a></li>
+									<li><a href="#"><b>Deep Drop Down3</b></a></li>
+									<li><a href="#"><b>Deep Drop Down4</b></a></li>
+									<li><a href="#"><b>Deep Drop Down5</b></a></li>
+								</ul>
+							<li>
+							<li><a href="#"><b>Drop Down2</b></a></li>
+							<li><a href="#"><b>Drop Down3</b></a></li>
+							<li><a href="#"><b>Drop Down4</b></a></li>
+						</ul>
+					</li>
+				   <li><a href="#"><b>Contact</b></a></li>				
+				</ul>	
+			</div>	
+				<div class="background">
+		<div class="text">
+			<h3>WELCOME TO REGNA</h3>
+
+			<p>We are team of talented designers making websites with Bootstrap</p>
+			<button class="btn">GET STARTED</button>	
+		</div>
+	</div>	
+	</div>
+	<div class="image">
+		<div class="part1">
+			<h2>Few Words About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="main">
+				<div class="main1">
+					<i class="fa-sharp fa-solid fa-hippo"></i>	
+				</div>
+				<div class="main2">
+					<h4>EIUSMOD TEMPOR</h4>
+					<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+				</div>
+		    </div>
+		    <div class="main10">
+				<div class="main11">
+					<i class="fa-solid fa-shield-cat"></i>		
+				</div>
+				<div class="main12">
+					<h4>MAGNI DOLORES</h4>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>	
+				</div>	
+		    </div>
+		    <div class="main21">
+				<div class="main22">
+					<i class="fa-brands fa-apple"></i>
+				</div>
+				<div class="main23">
+					<h4>MAGNI DOLORES</h4>
+
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>	
+				</div>	
+		    </div>
+		</div>		
+		<div class="part2">
+			<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/about-img.jpg">	
+		</div>
+	</div>
+	<div class="newpage">
+		<div class="fact0">
+			<h1>FACTS</h1>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+			<div class="const">
+				<div class="fact1">
+					<h2>232</h2>
+					<p>clients</p>
+				</div>
+				<div class="fact2">
+					<h2>232</h2>
+					<p>projects</p>
+				</div>
+				<div class="fact3">
+					<h2>1463</h2>
+				<p>Hours Of Support</p>
+				</div>
+				<div class="fact4">
+					<h2>42</h2>
+					<p>Hard woekers</p>
+				</div>
+			</div>
+		</div>
+		<div class="newpage1">
+			<h1>SERVICES</h1>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+		</div>
+		<div class="newpage2">
+                <div class="box1">
+                	<div class="icon">
+                		<i class="fa-solid fa-briefcase"></i>
+                	</div>
+                	<div class="temp1">
+               			<h3>LOREM IPSUM</h3>
+               			<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+               	    </div>
+                </div>
+
+                <div class="box2"> 
+                	<div class="icon1">
+                		<i class="fa-solid fa-clipboard-list"></i>
+                	</div>
+                	<div class="temp2">
+               			<h3>DOLOR SITEMA</h3>
+               			<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+               		</div>
+                </div>    
+                <div class="box3">
+                	<div class="icon2">
+                		<i class="fa-solid fa-chart-simple"></i>
+ 	               	</div>
+ 	               	<div class="temp3">
+               			<h3>SED UT PERSPICIATIS</h3>
+               			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+               		</div>
+                </div>
+        </div>
+        <div class="newpage3">
+        	<div class="box4">
+        			<div class="icon3">
+        				<i class="fa-solid fa-bars-progress"></i>
+ 	               	</div>
+ 	               	<div class="temp4">
+        				<h3>MAGNI DOLORES</h3>
+        				<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        			</div>
+        	</div>
+        	<div class="box5">
+        		<div class="icon4">
+        			<i class="fa-solid fa-table-list"></i>
+ 	            </div>
+ 	               	<div class="temp5">
+ 	               		<h3>NEMO ENIM</h3>
+        				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+        			</div>
+        	</div>
+        	<div class="box6">
+        			<div class="icon5">
+        			<i class="fa-solid fa-calendar-week"></i>
+ 	               	</div>
+ 	               	<div class="temp6">
+        				<h3>EIUSMOD TEMPOR</h3>
+        				<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+        			</div>
+        	</div>
+        </div>
+        <div class="newpage4">
+ 	       	<div class="background1">
+ 	       		<div class="text1">
+ 	       			<h3>Call To Action</h3>
+ 	       			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 	       		</div>
+ 	       		<div class="text2">
+ 	       			<button class="btn1">CALL TO ACTION</button>
+ 	       		</div>
+       	</div>
+        </div>
+        <div class="newpage5">
+        	<div class="text3">
+        		<h3>PORTFOLIO</h3><br>
+        		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        		<div class="text4">
+        			<button class="btn2">ALL</button>
+        			<button class="btn3">App</button>
+        			<button class="btn4">Card</button>
+        			<button class="btn5">Web</button>	
+        		</div>
+        	</div>
+        </div>
+    <div class="newpage6">
+        <div class="imgapp">
+        	<div class="app1">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-1.jpg">
+        	</div>
+        	
+        	<div class="app2">
+        		
+        			<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-3.jpg">
+        	</div>
+      
+        	<div class="app3">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-6.jpg">
+        	</div>
+
+
+       </div>
+       <div class="imgcard">
+        	<div class="card1">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-7.jpg">
+        	</div>
+        	
+        	<div class="card2">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-4.jpg">
+        	</div>
+      
+        	<div class="card3">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-8.jpg">
+        	</div>
+        </div>	
+        <div class="imgweb">
+        	<div class="web1">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-2.jpg">
+        	</div>
+        	
+        	<div class="web2">
+        		
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-5.jpg">
+        	</div>
+        	 <div class="web3">
+        		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/portfolio/portfolio-9.jpg">
+        	</div>	
+      	</div>
+</div>
+    <div class="newpage7">
+      	<div class="text4">
+      		<h3>TEAM</h3>
+      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+      	</div>
+     
+    <div class="team">
+    	<div class="team1">
+      		   <img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/team-1.jpg">
+
+			<h2>Walter White</h2>
+			<p>Chief Executive Officer</p>
+			<div class="social">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+		
+      	</div>
+      	 	<div class="team2">     	 		
+   				<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/team-2.jpg">
+   				<h2>Sarah Jhinson</h2>
+				<p>Product Manager</p>
+				<div class="social">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+      		</div>
+      	<div class="team3">	
+
+     		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/team-3.jpg">
+     		<h2>William Anderson</h2>
+			<p>CTO</p>
+			<div class="social">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+      	</div>
+      	<div class="team4">
+     		
+      		<img src="https://bootstrapmade.com/demo/templates/Regna/assets/img/team-4.jpg">
+      		<h2>Amanda Jepson</h2>
+			<p>Accountant</p>
+			<div class="social">
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+      	</div>
+      	</div>
+
+    </div>
+
+    <div class="newpage8">
+    	<div class="text0">
+
+    		<h1>CONTACT</h1>
+    		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+    	</div>
+    </div>
+    
+  	    	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48398.917260584254!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1686289523397!5m2!1sen!2sus" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  	<div class="address">
+  		<div class="info">
+  			<div class="iconx">
+  	    		<i class="fa-solid fa-location-dot"></i>
+  	    	</div>
+  	   		 <div class="datail">
+            <p>  A108 Adam Street<br>
+                 New York, NY 535022</p>
+             </div>
+             <div class="icony">
+             	<i class="fa-sharp fa-solid fa-envelope"></i>
+         	</div>
+         	<div class="datail1">
+            	<p>info@example.com</p>
+      	 	</div>
+       		<div class="iconz">
+             	<i class="fa-solid fa-mobile"></i>
+        	</div>
+         	<div class="datail2">
+           		 <p>+1 5589 55488 55s</p> 
+        	</div>  
+        		<div class="icon15">
+        		<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkedin"></i>
+        	    </div>                    
+        </div>
+
+        <div class="form">
+        	 <input type="text" name="bhavesh" placeholder="your name"><br>
+        	 <input type="text" name="bhavesh" placeholder="your Email"><br>
+        	<input type="text" name="bhavesh" placeholder="Subject">
+         	<textarea rows="5" cols="60">Message
+        	</textarea> <br>
+
+       		<input type="submit" name="submit" value="Send Message">
+        </div>
+       
+</div>
+		
+
+
+</body>
+</html>
