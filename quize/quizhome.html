@@ -54,9 +54,58 @@
       font-size: 18px;
       color: #555;
     }
+    /* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #444;
+}
   </style>
 </head>
 <body>
+   <!-- Navigation Bar -->
+   <header>
+    <nav>
+        <div class="logo">
+            <h1>SkillCraft Learning</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="courses.html">Cources</a></li>
+            <li><a href="quize/quizhome.html">Quiz</a></li>
+            <li><a href="p.html">About-Us</a></li>
+        </ul>
+    </nav>
+</header>
   <div class="container">
     <h1 style="padding: 5%;">Quiz page</h1>
  
