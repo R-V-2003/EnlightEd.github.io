@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('./images/earth-3537401.jpg');
+    background-image: url('/images/earth-3537401.jpg');
     /* Replace with your image path */
     background-size: cover;
     /* Ensures the image covers the entire background */
@@ -31,16 +31,40 @@ body::after {
     z-index: -1; /* Ensures the blurred background stays behind the content */
 }
 
+/* Header Styles */
 header {
-    background: #0077cc;
+    background-color: #333;
+    padding: 10px 20px;
     color: white;
-    text-align: center;
-    padding: 1.5em 0;
 }
 
-header h1 {
-    
-    margin: 0;
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #444;
 }
 
 main {

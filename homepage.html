@@ -66,7 +66,7 @@ nav {
 
 /* Hero Section Styles */
 .hero {
-    background: url('t1.jpg') no-repeat center center/cover;
+    background: url('images/t1.jpg') no-repeat center center/cover;
     height: 80vh;
     color: rgb(255, 255, 255);
     display: flex;
@@ -161,6 +161,70 @@ footer {
     text-align: center;
     padding: 20px;
 }
+ /*css of Popular Topics to Explore*/
+ .categories {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .categories h2 {
+            color: #FF6F00;
+            margin-bottom: 30px;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+
+        .topic {
+            background-color: #fff;
+            padding: 14px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s, box-shadow 0.3s;
+            height: 100px;
+            width: auto;
+        }
+
+        .topic img {
+            margin: auto;
+            padding: auto;
+            width: 50px;
+        }
+
+
+        .topic {
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .topic:hover {
+            background-color: #FF6F00;
+            /* Background color change on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Smooth shadow effect */
+        }
+
+        .topic p {
+            padding: auto;
+            margin: auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            /* Default color */
+            transition: color 0.3s ease-in-out;
+
+        }
+
+        .topic:hover p {
+                color: #fff;
+
+        }
     </style>
 </head>
 <body style="position: absolute;">
@@ -169,7 +233,7 @@ footer {
     <header>
         <nav>
             <div class="logo">
-                <h1>Design Studio</h1>
+                <h1>SkillCraft Learning</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -183,7 +247,7 @@ footer {
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to Design Studio</h2>
+            <h2>Welcome to SkillCraft Learning</h2>
             <p>Where creativity meets functionality.</p>
             <button id="discoverBtn">Discover More</button>
         </div>
@@ -206,6 +270,43 @@ footer {
             </div>
         </div>
     </div>
+    <div class="categories">
+        <h2>Popular Topics to Explore</h2>
+        <div class="topics-grid">
+            <div class="topic" data-topic="Microsoft Excel">
+                <img src="./images/cat1.png" alt="Microsoft Excel">
+                <p>Microsoft Excel</p>
+            </div>
+            <div class="topic" data-topic="AWS">
+                <img src="./images/cat2.png" alt="AWS">
+                <p>AWS</p>
+            </div>
+            <div class="topic" data-topic="Python">
+                <img src="./images/cat3.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="topic" data-topic="Java">
+                <img src="./images/cat4.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="topic" data-topic="Web Design">
+                <img src="./images/cat5.png" alt="Web Design">
+                <p>Web Design</p>
+            </div>
+            <div class="topic" data-topic="Web Development">
+                <img src="./images/cat6.png" alt="Web Development">
+                <p>Web Development</p>
+            </div>
+            <div class="topic" data-topic="MySQL">
+                <img src="./images/cat7.png" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="topic" data-topic="UI/UX Design">
+                <img src="./images/cat8.png" alt="UI/UX Design">
+                <p>UI/UX Design</p>
+            </div>
+        </div>
+    </div>
     
     <!-- About Section -->
     <section id="about" class="about">
@@ -213,11 +314,11 @@ footer {
         <p>We are a team of innovative designers creating visually stunning and user-friendly designs for brands, businesses, and personal projects.</p>
     </section>
     <!-- Team Menmbers -->
-     <div class="members" style="height: 770px;">
+     <!-- <div class="members" style="height: 770px;">
         
          <iframe src="p.html" frameborder="0" width="100%" height="100%"></iframe>
 
-     </div>
+     </div> -->
          
 
        
@@ -227,8 +328,8 @@ footer {
 
     <!-- Footer Section -->
     <footer id="contact">
-        <p>Contact us at: info@designstudio.com</p>
-        <p>© 2024 Design Studio</p>
+        <p>Contact us at: info@SkillCraftLearning.com</p>
+        <p>© 2024 SkillCraft Learning</p>
     </footer>
 
     <script src="scripts.js"></script>
