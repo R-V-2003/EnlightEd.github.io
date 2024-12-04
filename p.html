@@ -98,13 +98,27 @@
             justify-content: space-around;
 
         }
-        tr{
-          
-        }
+        /* Initially hide the iframe */
+iframe.p {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* On hover over the #d element, show the iframe */
+#d:hover + .p {
+    display: block;
+}
+       
+      
     </style>
 </head>
 
 <body>
+    <div style="height: 70%; width: 70%; position: fixed; z-index: 3; margin: 5% 15%;">
+
+        <iframe  class="p" src="dhruv.html" frameborder="0" style="width:100%; height: 100%; display: none;"></iframe>
+    </div>
     <table>
         <tr>
 
@@ -142,7 +156,7 @@
             </td>
             <td>
                 <!-- dhruv  -->
-                <div class="container">
+                <div class="container , " id="d">
     
                     <div class=" d-flex ">
                         <div class="pic">
@@ -159,7 +173,7 @@
                                     <img src="images/twitter.png" alt="">
                                 </a>
                                 <a href="https://www.facebook.com">
-                                    <img src="facebook.png" alt="">
+                                    <img src="images/facebook.png" alt="">
                                 </a>
                                 <a href="https://www.instagram.com">
                                     <img src="images/instagram.png" alt="">
@@ -419,7 +433,16 @@
     </table>
 
 
+<script>
+    document.getElementById('d').addEventListener('mouseenter', function() {
+    document.querySelector('.p').style.display = 'block';
+});
 
+document.getElementById('d').addEventListener('mouseleave', function() {
+    document.querySelector('.p').style.display = 'none';
+});
+
+</script>
 </body>
 
 </html>
