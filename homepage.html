@@ -15,7 +15,7 @@
 
 body {
     background-color: #f4f4f4; 
-     color: #333; 
+     color: #034fb3; 
      width: 100%;
     
 }
@@ -31,9 +31,11 @@ a {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #10044f;
     padding: 10px 20px;
     color: white;
+    height: 80px;
+    background: linear-gradient(to left, #c5d5df, #2973b9e0);
 }
 
 nav {
@@ -42,9 +44,17 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .logo h1 {
     font-size: 24px;
+    margin-left: 20px;
+
+    
 }
 
 .nav-links {
@@ -62,12 +72,12 @@ nav {
 }
 
 .nav-links li a:hover {
-    background-color: #444;
+    color: #2498f0;
 }
 
 /* Hero Section Styles */
 .hero {
-    background: url('images/t1.jpg') no-repeat center center/cover;
+    background: url('images/b2.jpg') no-repeat center center/cover;
     height: 80vh;
     color: rgb(255, 255, 255);
     display: flex;
@@ -86,7 +96,7 @@ nav {
 }
 
 button {
-    background-color: #333;
+    background-color: #4e6eaf;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -96,7 +106,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #1f89fb;
 }
 
 /* About Section Styles */
@@ -111,7 +121,12 @@ button:hover {
     margin-bottom: 20px;
 }
 /* members section style */
-
+.members:hover{
+    box-shadow:20px 2px 10px black;
+}
+#view:hover{
+    background-color: #167ce800;
+}
 
 /* Services Section Styles */
 .services {
@@ -157,7 +172,7 @@ button:hover {
 /* Footer Styles */
 footer {
     position: relative;
-    background-color: #333;
+    background-color: #4e6eaf;
     color: white;
     text-align: center;
     padding: 20px;
@@ -169,7 +184,7 @@ footer {
         }
 
         .categories h2 {
-            color: #FF6F00;
+            color: #034fb3; 
             margin-bottom: 30px;
         }
 
@@ -205,7 +220,7 @@ footer {
         }
 
         .topic:hover {
-            background-color: #FF6F00;
+            background-color: #167be8;
             /* Background color change on hover */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             /* Smooth shadow effect */
@@ -225,7 +240,25 @@ footer {
         .topic:hover p {
                 color: #fff;
 
+
         }
+        .service-item {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: var(--primary);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
     </style>
 </head>
 <body style="position: absolute;">
@@ -234,7 +267,7 @@ footer {
     <header>
         <nav>
             <div class="logo">
-                <h1>SkillCraft Learning</h1>
+                <img src="images/logo.png" style="margin-top: 12px; width: 80px; height: 80px; object-fit: cover; border-radius: 50%;"><h1>EnlightEd</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -253,6 +286,50 @@ footer {
             <button id="discoverBtn">Discover More</button>
         </div>
     </section>
+    <!-- Service Start -->
+    <div class="container-xxl py-5" style="display: flex; flex-direction: row;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Skilled Instructors</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Online Classes</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Home Projects</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Book Library</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
     <!-- Services Section -->
     <div id="services" class="services">
         <h2>Our Services</h2>
@@ -315,11 +392,14 @@ footer {
         <p>We are a team of innovative designers creating visually stunning and user-friendly designs for brands, businesses, and personal projects.</p>
     </section>
     <!-- <-- Team Menmbers --> 
-      <div class="members" style="height: 270px; border: 1px solid black; box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); align-items: center;" >
+      <div class="members" style="z-index: 6; height: 290px;  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); align-items: center; position: relative;" >
         
-         <iframe src="p.html"scrolling="no" style="overflow: hidden; position: absolute; margin-bottom: 50px;" frameborder="0" width="100%" height="100%"></iframe>
-         <p href="p.html" style="margin:0  50% 0 30%; height: 30px; width: 100px;z-index: 2; position: absolute; border: 2px solid red; background: transparent;">bang bhosda</p>
+         
+        <div style="border: 1px solid black; height: 100%; width: 100%; position: absolute; z-index: 3; background-color: #167ce800;display: flex;justify-content: center; align-items: flex-end;" >
+            <a href="p.html"<p id="view" style="text-align: center; height: 40px; width: 100px;border-radius: 8px;background-color: #4993e3; font-size: 30px; margin-bottom: 8px; color: #f3f8fb;">View</p></a>
+        </div>
         
+          <iframe src="p.html"scrolling="no" style="overflow: hidden; position: absolute; margin-bottom: 100px; z-index: 0;" frameborder="0" width="100%" height="100%"></iframe>
      </div>
          
 
