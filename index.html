@@ -36,7 +36,7 @@ body {
     background-color: #f8f8f8;
 }
 
-.form-header button {
+.form-header .button {
     flex: 1;
     padding: 15px 0;
     border: none;
@@ -48,12 +48,12 @@ body {
     transition: color 0.3s ease;
 }
 
-.form-header button.active {
+.form-header .button.active {
     color: #007bff;
     border-bottom: 2px solid #007bff;
 }
 
-.form-header button:hover {
+.form-header .button:hover {
     color: #0056b3;
 }
 
@@ -87,7 +87,7 @@ form input {
     font-size: 14px;
 }
 
-form button {
+form .button {
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -98,7 +98,7 @@ form button {
     width: 100%;
 }
 
-form button:hover {
+form .button:hover {
     background-color: #0056b3;
 }
     </style>
@@ -115,7 +115,7 @@ form button:hover {
                     <h2>Welcome Back!</h2>
                     <input type="email" placeholder="Email" required />
                     <input type="password" placeholder="Password" required />
-                   <a href="homepage.html"><button>Login</button></a> 
+                   <a href="homepage.html" class="button"</a> 
                 </form>
             </div>
             <div id="signup-form" class="form-content">
@@ -124,7 +124,7 @@ form button:hover {
                     <input type="text" placeholder="Full Name" required />
                     <input type="email" placeholder="Email" required />
                     <input type="password" placeholder="Password" required />
-                    <button>Sign Up</button>
+                    <button class="button">Sign Up</button>
                 </form>
             </div>
         </div>
