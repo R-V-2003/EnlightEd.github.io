@@ -502,7 +502,7 @@
     color: black;
     margin: 10px;
     transition: all 
-    background: white;
+    background-color: white;
     border-radius: 4px;
 }
 .btn2{
