@@ -31,10 +31,41 @@ body::after {
     z-index: -1; /* Ensures the blurred background stays behind the content */
 }
 
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
 
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.logo h1 {
+    font-size: 24px;
+}
 
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
 
+.nav-links li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #444;
+}
 
 main {
     padding: 2em;

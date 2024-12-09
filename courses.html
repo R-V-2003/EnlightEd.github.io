@@ -7,7 +7,6 @@
     <title>Learning Website</title>
 
     <link rel="stylesheet" href="c-style.css">
-    <link rel="stylesheet" href="homepage.css">
 
 
     <script>
@@ -160,7 +159,7 @@
 
                 // Add click event listener to the button
                 button.addEventListener("click", () => {
-                    window.location.href = "payment-gateway.html";
+                    alert(`You have successfully enrolled in "${course.title}"!`);
                 });
 
                 courseInfo.appendChild(button);
@@ -183,29 +182,16 @@
 
 
      <!-- Navigation Bar -->
-    <header>
+     <header>
         <nav>
-
-            <img src="images/logo2-removebg-preview.png"
-                style="margin-top: 40px; width:200px; height: 100px; object-fit: cover;">
-
+            <div class="logo">
+                <h1>Design Studio</h1>
+            </div>
             <ul class="nav-links">
-                <li><a href="homepage.html">Home</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropdown-button">courses</button>
-                        <div class="dropdown-content">
-                            <a href="web-tech.html">web-tech</a>
-                            <a href="os.html">OS</a>
-                            <a href="cn.html">CN</a>
-                            <a href="ai.html">A.I.</a>
-                            <a href="Maths.html">Probability & Statistics</a>
-                        </div>
-                    </div>
-                    <!-- <a href="courses.html">Cources</a> -->
-                </li>
-                <li><a href="quizhome.html">Quiz</a></li>
-                <li><a href="p.html">About-Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="courses.html">Cources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="#about">About-Us</a></li>
             </ul>
         </nav>
     </header>
