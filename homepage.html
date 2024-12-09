@@ -16,8 +16,8 @@
     <header>
         <nav>
 
-            <img src="images/logo2-removebg-preview.png"
-                style="margin-top: 40px; width:200px; height: 100px; object-fit: cover;">
+            <img src="images/l-removebg.png"
+                style="margin-top:25px;margin-left: -20px; width:180px; height:180px; object-fit:fill;">
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -45,7 +45,7 @@
         <div class="hero-content">
             <h2>Welcome to EdlightEd Learning</h2>
             <p>Where creativity meets functionality.</p>
-            <button id="discoverBtn">Discover More</button>
+            <button id="discoverBtn" onclick="course()">Discover More</button>
         </div>
     </section>
 
@@ -113,10 +113,8 @@
     </section>
     <!-- <-- Team Menmbers -->
     <div class="members"
-        style="z-index: 6; height: 290px;  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); align-items: center; position: relative;">
-        <span style="background-color: #c5d5df;
- height: 30px ; width: 90px; align-self: flex-start; position: absolute; z-index: 8; margin: 30px 40px;"></span>
-
+        style="z-index: 6; height: 290px;  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); align-items: center; position: relative; overflow: hidden;">
+       
         <div
             style="border: 1px solid black; height: 100%; width: 100%; position: absolute; z-index: 3; background-color: #167ce800;display: flex;justify-content: center; align-items: flex-end;">
 
@@ -127,7 +125,7 @@
         </div>
 
         <iframe src="p.html" scrolling="no"
-            style="overflow: hidden; position: absolute; margin-bottom: 100px; z-index: 0;" frameborder="0" width="100%"
+            style="border: 0px none;  height: 859px; margin-top: -100px; width: 100%;"
             height="100%"></iframe>
     </div>
 
@@ -143,7 +141,13 @@
         <p>© 2024 EnlightEd Learning</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+       function course(){
+            const button = document.getElementById("discoverBtn");
+            window.location.href = "courses.html";
+           
+        }
+    </script>
 </body>
 
 </html>

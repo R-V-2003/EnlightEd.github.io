@@ -109,9 +109,9 @@ footer {
         <section id="videoSection">
             <h2>Probability & Statistics</h2>
             <div id="videoContainer">
-                <iframe id="video1" class="video" src="video/m.mp4" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe id="video2" class="video" src="video/m1.mp4" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe id="video3" class="video" src="video/m2.mp4" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video1" class="video" src="video/m.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
+                <iframe id="video2" class="video" src="video/m1.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
+                <iframe id="video3" class="video" src="video/m2.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
             </div>
         </section>
     </main>
@@ -121,6 +121,21 @@ footer {
     </footer>
 
     <script>
+              // Get all video elements
+              const videos = document.querySelectorAll('video');
+
+// Add event listeners to each video
+videos.forEach(video => {
+    video.addEventListener('play', () => {
+        // Pause all other videos
+        videos.forEach(v => {
+            if (v !== video) {
+                v.pause();
+            }
+        });
+    });
+});
+
         // Function to show the corresponding video based on the topic clicked
 function showVideo(videoId) {
     // Hide all videos initially

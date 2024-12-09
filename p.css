@@ -1,9 +1,9 @@
 body {
     height: 300px;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-   display: flex;
+    /* padding: 30px; */
+    /* display: flex; */
+    /* justify-content: center; */
+   /* display: flex; */
    background-color: #c5d5df;
 
 }
@@ -137,6 +137,7 @@ iframe{
 table {
     border-spacing: 30px;
     
+    margin-left: 7%;
 
     
 
