@@ -8,15 +8,14 @@
         /* Basic page styles */
 body {
     font-family: Arial, sans-serif;
+    position: absolute;
+    z-index: 6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-.content {
-    text-align: center;
-    margin-top: 50px;
-}
+
 
 /* Modal styles */
 .modal {
@@ -64,11 +63,6 @@ button:hover {
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Welcome to Our Website!</h1>
-        <p>We’re glad to have you. Let’s take a quick tour.</p>
-    </div>
-
     <!-- First-time User Guide Modal -->
     <div id="guideModal" class="modal">
         <div class="modal-content">
@@ -93,28 +87,28 @@ button:hover {
         const guideSteps = [
             {
                 title: "Welcome!",
-                content: "Thank you for joining us! Let's start by setting up your profile.",
-                highlightElement: '.content'  // Example of highlighted area
+                content: "Thank you for joining us! Let's start the tour..!.",
+                highlightElement: '.navigation'  // Example of highlighted area
             },
             {
-                title: "Step 1: Set Up Your Profile",
-                content: "Click on your profile icon to add a profile picture and update your details.",
-                highlightElement: '#profileIcon'  // Replace with actual profile icon element
+                title: "Step 1: Your Courses",
+                content: "Click on your course icon to see your Courses.",
+                highlightElement: '#course'  // Replace with actual profile icon element
             },
             {
-                title: "Step 2: Explore Your Dashboard",
-                content: "Your dashboard shows all important info. Click here to view your tasks and activities.",
-                highlightElement: '#dashboard'  // Replace with actual dashboard section ID
+                title: "Step 2: Discover",
+                content: "You can purchase and add new courses ,which you like.",
+                highlightElement: '#discover'  // Replace with actual dashboard section ID
             },
             {
-                title: "Step 3: Learn Key Features",
-                content: "Take a look at our tutorials section to learn more about our features.",
-                highlightElement: '#tutorials'  // Replace with actual tutorial section ID
+                title: "Step 3: Quize",
+                content: "Here you will get Quizes to test your knowledge ",
+                highlightElement: '#quize'  // Replace with actual tutorial section ID
             },
             {
                 title: "You're All Set!",
-                content: "Great! You're all set to start using the website. Enjoy!",
-                highlightElement: '.content'  // Reset highlight to content area
+                content: "Great! You're all set to start using the EnlightEd. Enjoy!",
+                highlightElement: '#homepage'  // Reset highlight to content area
             }
         ];
 
