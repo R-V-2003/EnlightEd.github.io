@@ -11,3 +11,6 @@ cardNumInput.addEventListener('keyup', () => {
         cardNumInput.value = cNumber
     }
 })
+function home() {
+    window.location.href = "courses.html";
+}

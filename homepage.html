@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer Home Page</title>
-    
-       
+
+
     <link rel="stylesheet" href="homepage.css">
 </head>
 
@@ -111,21 +111,15 @@
             businesses, and personal projects.</p>
     </section>
     <!-- <-- Team Menmbers -->
-    <div class="members"
-        style="z-index: 6; height: 290px;  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); align-items: center; position: relative; overflow: hidden;">
-       
-        <div
-            style="border: 1px solid black; height: 100%; width: 100%; position: absolute; z-index: 3; background-color: #167ce800;display: flex;justify-content: center; align-items: flex-end;">
+    <div id="members">
 
-            <a href="Profile.html""<p id="view" class="fadeInUp"
-                style="text-align: center; height: 40px; width: 100px;border-radius: 8px;background-color: #4993e3; font-size: 30px; margin-bottom: 8px; color: #f3f8fb;
-                    ;">View
+        <div id="displayover">
+
+            <a href="Profile.html""<p id="view">View
                 </p></a>
         </div>
 
-        <iframe src="Profile.html" scrolling="no"
-            style="border: 0px none;  height: 859px; margin-top: -100px; width: 100%;"
-            height="100%"></iframe>
+        <iframe src="Profile.html" scrolling="no" height="100%"></iframe>
     </div>
 
 
@@ -141,10 +135,10 @@
     </footer>
 
     <script>
-       function course(){
+        function course() {
             const button = document.getElementById("discoverBtn");
             window.location.href = "courses.html";
-           
+
         }
     </script>
 </body>

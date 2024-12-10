@@ -107,11 +107,15 @@ footer {
 
     <main>
         <section id="videoSection">
+            <div class="back" style="display: flex; justify-content: end; ">
+
+                <button onclick="home()" style="height: 30px; width: 70px; border: none; background-color: #5aabdd; color: white;margin: 10px 10px ;">Close</button>
+            </div>
             <h2>Probability & Statistics</h2>
             <div id="videoContainer">
-                <iframe id="video1" class="video" src="video/m.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
-                <iframe id="video2" class="video" src="video/m1.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
-                <iframe id="video3" class="video" src="video/m2.mp4" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
+                <video controls id="video1" class="video" src="video/m.mp4"></video>
+                <video controls id="video2" class="video" src="video/m1.mp4"></video>
+                <video controls id="video3" class="video" src="video/m2.mp4"></video>
             </div>
         </section>
     </main>
@@ -121,6 +125,9 @@ footer {
     </footer>
 
     <script>
+        function home() {
+            window.location.href = "homepage.html";
+        }
               // Get all video elements
               const videos = document.querySelectorAll('video');
 

@@ -108,11 +108,15 @@ footer {
 
     <main>
         <section id="videoSection">
+            <div class="back" style="display: flex; justify-content: end; ">
+
+                <button onclick="home()" style="height: 30px; width: 70px; border: none; background-color: #5aabdd; color: white;margin: 10px 10px ;">Close</button>
+            </div>
             <h2>Computer Network</h2>
             <div id="videoContainer">
-                <iframe id="video1" class="video" src="video/cn.mp4" frameborder="0" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
-                <iframe id="video2" class="video" src="video/cn1.mp4" frameborder="0" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
-                <iframe id="video3" class="video" src="video/cn2.mp4" frameborder="0" allow=" encrypted-media; gyroscope; picture-in-picture;autostop;" allowfullscreen></iframe>
+                <video controls id="video1" class="video" src="video/cn.mp4" ></video>
+                <video controls id="video2" class="video" src="video/cn1.mp4" ></video>
+                <video controls id="video3" class="video" src="video/cn2.mp4" ></video>
             </div>
         </section>
     </main>
@@ -122,6 +126,20 @@ footer {
     </footer>
 
     <script>
+          function home() {
+            window.location.href = "homepage.html";
+        }
+        const videos = document.querySelectorAll('video');
+
+videos.forEach(video => {
+    video.addEventListener('play', () => {
+        videos.forEach(v => {
+            if (v !== video) {
+                v.pause();
+            }
+        });
+    });
+});
         // Function to show the corresponding video based on the topic clicked
 function showVideo(videoId) {
     // Hide all videos initially

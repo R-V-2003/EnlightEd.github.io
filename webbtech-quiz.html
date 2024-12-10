@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maths Quiz</title>
+  <title>Web Technology Quiz</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -68,8 +68,12 @@
   </style>
 </head>
 <body>
+  <div class="back" style="display: flex; justify-content: end; ">
+
+    <button onclick="home()" style="height: 30px; width: 70px; border: none; background-color: #5aabdd; color: white;margin: 10px 10px ;">Close</button>
+</div>
   <div class="container">
-    <h1>Maths Quiz</h1>
+    <h1>Web BTech Quiz</h1>
     <div id="quiz">
       <div class="timer" id="timer"></div>
       <div class="question">
@@ -88,17 +92,20 @@
   </div>
 
   <script>
+      function home() {
+            window.location.href = "quizhome.html";
+        }
     const questions = [
-      { question: "What is 5 + 3?", options: ["6", "7", "8", "9"], correct: "8" },
-      { question: "What is the square root of 16?", options: ["2", "4", "8", "6"], correct: "4" },
-      { question: "Solve: 12 ÷ 3.", options: ["4", "6", "3", "5"], correct: "4" },
-      { question: "What is 7 × 6?", options: ["42", "36", "49", "40"], correct: "42" },
-      { question: "What is 15% of 200?", options: ["30", "35", "25", "40"], correct: "30" },
-      { question: "What is 9²?", options: ["81", "72", "63", "91"], correct: "81" },
-      { question: "What is the value of π (pi) to 2 decimal places?", options: ["3.14", "3.15", "3.16", "3.13"], correct: "3.14" },
-      { question: "What is 100 - 45?", options: ["55", "50", "45", "60"], correct: "55" },
-      { question: "What is the area of a circle with radius 7 (π = 3.14)?", options: ["154", "49", "77", "100"], correct: "154" },
-      { question: "What is 25 × 4?", options: ["100", "120", "110", "90"], correct: "100" }
+      { question: "What is HTML used for?", options: ["Creating styles for websites", "Creating the structure of websites", "Programming websites", "Designing websites"], correct: "Creating the structure of websites" },
+      { question: "What does CSS stand for?", options: ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"], correct: "Cascading Style Sheets" },
+      { question: "What is JavaScript used for?", options: ["Creating static websites", "Adding interactivity to websites", "Designing websites", "Structuring websites"], correct: "Adding interactivity to websites" },
+      { question: "What is the full form of HTTP?", options: ["Hypertext Transfer Protocol", "Hyperlink Text Protocol", "High Transfer Text Protocol", "Hyperlink Transmission Protocol"], correct: "Hypertext Transfer Protocol" },
+      { question: "Which tag is used to create a hyperlink in HTML?", options: ["<link>", "<a>", "<href>", "<url>"], correct: "<a>" },
+      { question: "What is the main purpose of a web browser?", options: ["To store data on the internet", "To access and display web pages", "To design websites", "To write code"], correct: "To access and display web pages" },
+      { question: "What is Bootstrap primarily used for?", options: ["Database management", "Front-end framework for responsive web design", "Server-side scripting", "Programming websites"], correct: "Front-end framework for responsive web design" },
+      { question: "What is the purpose of the <head> section in an HTML document?", options: ["To define the header of a webpage", "To contain meta-information about the webpage", "To display content on the webpage", "To store images and videos"], correct: "To contain meta-information about the webpage" },
+      { question: "What is an ID selector in CSS?", options: ["A selector that styles elements with a unique ID", "A selector that styles multiple elements", "A selector that uses classes", "A selector that applies default styles"], correct: "A selector that styles elements with a unique ID" },
+      { question: "Which HTML element is used for inserting a line break?", options: ["<break>", "<lb>", "<br>", "<line>"], correct: "<br>" }
     ];
 
     let currentQuestion = 0;

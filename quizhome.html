@@ -59,6 +59,9 @@
     .line{
       border-bottom:2px solid #555555b9;
     }
+    h1{
+      margin: 2% 47%;
+    }
 
 </style>
 <link rel="stylesheet" href="homepage.css">
@@ -90,29 +93,29 @@
         </ul>
     </nav>
 </header>
-<h1 style="margin: 2% 47%;">Quiz</h1>
+<h1>Quiz</h1>
 <div class="line"></div>
   <div class="container">
  
     <div class="subjects">
       <div class="subject" data-subject="webbtech">
-        <img src="quize/webt.png" alt="Web BTech">
+        <img src="webt.png" alt="Web BTech">
         <p>Web BTech</p>
       </div>
       <div class="subject" data-subject="os">
-        <img src="quize/os.png" alt="Operating Systems">
+        <img src="os.png" alt="Operating Systems">
         <p>Operating Systems</p>
       </div>
       <div class="subject" data-subject="ai">
-        <img src="quize/AI.jpg" alt="Artificial Intelligence">
+        <img src="AI.jpg" alt="Artificial Intelligence">
         <p>Artificial Intelligence</p>
       </div>
       <div class="subject" data-subject="maths">
-        <img src="quize/maths.jpg" alt="Mathematics">
+        <img src="maths.jpg" alt="Mathematics">
         <p>Mathematics</p>
       </div>
       <div class="subject" data-subject="cn">
-        <img src="quize/CN.jpg" alt="Computer Networks">
+        <img src="CN.jpg" alt="Computer Networks">
         <p>Computer Networks</p>
       </div>
     </div>
@@ -123,19 +126,19 @@
       // Display a message or navigate to a specific page
       switch (subject) {
         case 'webbtech':
-          window.location.href = 'quize/webbtech-quiz.html';
+          window.location.href = 'webbtech-quiz.html';
           break;
         case 'os':
-          window.location.href = 'quize/os-quiz.html';
+          window.location.href = 'os-quiz.html';
           break;
         case 'ai':
-          window.location.href = 'quize/ai-quiz.html';
+          window.location.href = 'ai-quiz.html';
           break;
         case 'maths':
-          window.location.href = 'quize/maths-quiz.html';
+          window.location.href = 'maths-quiz.html';
           break;
         case 'cn':
-          window.location.href = 'quize/cn-quiz.html';
+          window.location.href = 'cn-quiz.html';
           break;
         default:
           alert('Subject not found!');
