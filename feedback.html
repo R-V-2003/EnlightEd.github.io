@@ -83,31 +83,25 @@ button:hover {
     <div class="feedback-container">
         <h1>Feedback Form</h1>
         <p>We value your feedback! Please rate your experience:</p>
-       
+      
         <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
         <button id="submit-btn">Submit</button>
         <p id="thank-you" style="display: none;">Thank you for your feedback!</p>
     </div>
-    <script >
-        document.addEventListener('DOMContentLoaded', () => {
-    const stars = document.querySelectorAll('.star');
+    <script>
+     
+   
     const feedback = document.getElementById('feedback');
     const submitBtn = document.getElementById('submit-btn');
     const thankYouMsg = document.getElementById('thank-you');
 
-                            
+  
 
     submitBtn.addEventListener('click', () => {
-        if (selectedRating === 0 || !feedback.value.trim()) {
-            alert('Please select a rating and provide feedback.');
-            return;
-        }
         thankYouMsg.style.display = 'block';
         feedback.value = '';
-        selectedRating = 0;
-        stars.forEach(s => s.classList.remove('selected'));
+      
     });
-});
     </script>
 </body>
 </html>
